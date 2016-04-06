@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032C28091CA23E790062337C /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 032C28081CA23E790062337C /* quotes.plist */; };
 		0337A9BD1CA2203600975A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0337A9BC1CA2203600975A53 /* AppDelegate.swift */; };
-		0337A9BF1CA2203600975A53 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0337A9BE1CA2203600975A53 /* FirstViewController.swift */; };
-		0337A9C11CA2203600975A53 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0337A9C01CA2203600975A53 /* SecondViewController.swift */; };
+		0337A9BF1CA2203600975A53 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0337A9BE1CA2203600975A53 /* QuoteViewController.swift */; };
 		0337A9C41CA2203600975A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0337A9C21CA2203600975A53 /* Main.storyboard */; };
 		0337A9C61CA2203700975A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0337A9C51CA2203700975A53 /* Assets.xcassets */; };
 		0337A9C91CA2203700975A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0337A9C71CA2203700975A53 /* LaunchScreen.storyboard */; };
 		0337A9D41CA2203700975A53 /* Stoic_DeathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0337A9D31CA2203700975A53 /* Stoic_DeathTests.swift */; };
 		0337A9DF1CA2203700975A53 /* Stoic_DeathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0337A9DE1CA2203700975A53 /* Stoic_DeathUITests.swift */; };
+		0337A9ED1CA2238F00975A53 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0337A9EC1CA2238F00975A53 /* AboutViewController.swift */; };
+		0337A9F51CA226A200975A53 /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0337A9F41CA226A200975A53 /* ReminderTableViewController.swift */; };
+		03A03DD71CAE19E000C1582C /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A03DD61CAE19E000C1582C /* SetTimeViewController.swift */; };
+		03A03DD91CAE346800C1582C /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A03DD81CAE346800C1582C /* Quote.swift */; };
+		03FED13C1CB4C226005C6B5D /* QuoteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FED13B1CB4C226005C6B5D /* QuoteNotification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		032C28081CA23E790062337C /* quotes.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = quotes.plist; sourceTree = "<group>"; };
 		0337A9B91CA2203600975A53 /* Stoic Death.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stoic Death.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0337A9BC1CA2203600975A53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0337A9BE1CA2203600975A53 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		0337A9C01CA2203600975A53 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0337A9BE1CA2203600975A53 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		0337A9C31CA2203600975A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0337A9C51CA2203700975A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0337A9C81CA2203700975A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		0337A9DA1CA2203700975A53 /* Stoic DeathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stoic DeathUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0337A9DE1CA2203700975A53 /* Stoic_DeathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stoic_DeathUITests.swift; sourceTree = "<group>"; };
 		0337A9E01CA2203700975A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0337A9EC1CA2238F00975A53 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		0337A9F41CA226A200975A53 /* ReminderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReminderTableViewController.swift; path = ../ReminderTableViewController.swift; sourceTree = "<group>"; };
+		03A03DD61CAE19E000C1582C /* SetTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
+		03A03DD81CAE346800C1582C /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		03FED13B1CB4C226005C6B5D /* QuoteNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteNotification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				0337A9BC1CA2203600975A53 /* AppDelegate.swift */,
-				0337A9BE1CA2203600975A53 /* FirstViewController.swift */,
-				0337A9C01CA2203600975A53 /* SecondViewController.swift */,
+				03FED13D1CB4C26C005C6B5D /* Models */,
+				03FED13E1CB4C6F5005C6B5D /* Controllers */,
 				0337A9C21CA2203600975A53 /* Main.storyboard */,
 				0337A9C51CA2203700975A53 /* Assets.xcassets */,
 				0337A9C71CA2203700975A53 /* LaunchScreen.storyboard */,
@@ -126,6 +136,27 @@
 				0337A9E01CA2203700975A53 /* Info.plist */,
 			);
 			path = "Stoic DeathUITests";
+			sourceTree = "<group>";
+		};
+		03FED13D1CB4C26C005C6B5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				032C28081CA23E790062337C /* quotes.plist */,
+				03A03DD81CAE346800C1582C /* Quote.swift */,
+				03FED13B1CB4C226005C6B5D /* QuoteNotification.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		03FED13E1CB4C6F5005C6B5D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0337A9BE1CA2203600975A53 /* QuoteViewController.swift */,
+				0337A9EC1CA2238F00975A53 /* AboutViewController.swift */,
+				0337A9F41CA226A200975A53 /* ReminderTableViewController.swift */,
+				03A03DD61CAE19E000C1582C /* SetTimeViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +227,7 @@
 				TargetAttributes = {
 					0337A9B81CA2203600975A53 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 2G3AXSCQ2V;
+						DevelopmentTeam = 4UWA5DVCG3;
 					};
 					0337A9CE1CA2203700975A53 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -238,6 +269,7 @@
 				0337A9C91CA2203700975A53 /* LaunchScreen.storyboard in Resources */,
 				0337A9C61CA2203700975A53 /* Assets.xcassets in Resources */,
 				0337A9C41CA2203600975A53 /* Main.storyboard in Resources */,
+				032C28091CA23E790062337C /* quotes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0337A9C11CA2203600975A53 /* SecondViewController.swift in Sources */,
+				03A03DD71CAE19E000C1582C /* SetTimeViewController.swift in Sources */,
 				0337A9BD1CA2203600975A53 /* AppDelegate.swift in Sources */,
-				0337A9BF1CA2203600975A53 /* FirstViewController.swift in Sources */,
+				0337A9F51CA226A200975A53 /* ReminderTableViewController.swift in Sources */,
+				0337A9ED1CA2238F00975A53 /* AboutViewController.swift in Sources */,
+				03A03DD91CAE346800C1582C /* Quote.swift in Sources */,
+				0337A9BF1CA2203600975A53 /* QuoteViewController.swift in Sources */,
+				03FED13C1CB4C226005C6B5D /* QuoteNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,10 +440,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Stoic Death/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Adventure-Design.Stoic-Death";
+				PRODUCT_BUNDLE_IDENTIFIER = AdventureDesign.StoicDeath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -415,10 +454,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Stoic Death/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Adventure-Design.Stoic-Death";
+				PRODUCT_BUNDLE_IDENTIFIER = AdventureDesign.StoicDeath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -489,6 +531,7 @@
 				0337A9E51CA2203700975A53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0337A9E61CA2203700975A53 /* Build configuration list for PBXNativeTarget "Stoic DeathTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +540,7 @@
 				0337A9E81CA2203700975A53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0337A9E91CA2203700975A53 /* Build configuration list for PBXNativeTarget "Stoic DeathUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +549,7 @@
 				0337A9EB1CA2203700975A53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
