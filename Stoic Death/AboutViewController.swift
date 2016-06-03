@@ -15,6 +15,8 @@ class AboutViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
        // textView.text = "Awesome Awesome Awesome!"
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "tile")!)
+
     }
 
     override func didReceiveMemoryWarning() {

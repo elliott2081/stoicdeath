@@ -18,10 +18,12 @@ class QuoteViewController: UIViewController {
         // Do any additional setup after loading the view
         
         //load the image of the philosopher
-        philosopherImage.image = UIImage(named: "MarcusAurelius")
+        philosopherImage.image = UIImage(named: "MarcusAuerlius")
+        philosopherImage.alpha = 0.5
         
         //put the quote on the screen
         quoteLabel.text = QuoteOfDay.getQuote()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "tile")!)
 
         
     }

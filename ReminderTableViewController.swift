@@ -17,6 +17,14 @@ class ReminderTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "tile")!)
+        //load the persistent notifications from the disk
+        let localNotifications = UIApplication.sharedApplication().scheduledLocalNotifications
+        for localNotification in localNotifications! {
+            notifications.append(QuoteNotification(notification: localNotification))
+
+        }
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,6 +37,8 @@ class ReminderTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
 
     // MARK: - Table view data source
 
@@ -50,6 +60,7 @@ class ReminderTableViewController: UITableViewController {
         // Configure the cell...
 
         cell.textLabel?.text = notifications[indexPath.row].dateString
+        cell.backgroundColor = UIColor.clearColor()
 
         return cell
     }
@@ -67,8 +78,10 @@ class ReminderTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
+            
             // Delete the row from the data source
-            notifications.removeAtIndex(indexPath.row)
+            notifications[indexPath.row].deschedule() //first deschedule the notification
+            notifications.removeAtIndex(indexPath.row)//now remove it from the list of notifications
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -104,6 +117,7 @@ class ReminderTableViewController: UITableViewController {
             if dateTime != nil {
                 //format date into string
                 self.dateTime = dateTime
+                print("inside unwindToTableView")
                 print(dateTime)
                 let formatter = NSDateFormatter()
                 formatter.dateFormat =  "h:mm a"
@@ -118,8 +132,8 @@ class ReminderTableViewController: UITableViewController {
                 
                 //schedule notification with the OS
                 notifications.last?.schedule()
-                
-                
+                print(UIApplication.sharedApplication().scheduledLocalNotifications)
+
                 
             }
         }

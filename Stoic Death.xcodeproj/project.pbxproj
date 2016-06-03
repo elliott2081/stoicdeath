@@ -48,10 +48,10 @@
 		0337A9C51CA2203700975A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0337A9C81CA2203700975A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0337A9CA1CA2203700975A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0337A9CF1CA2203700975A53 /* Stoic DeathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stoic DeathTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0337A9CF1CA2203700975A53 /* Stoic Death.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stoic Death.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0337A9D31CA2203700975A53 /* Stoic_DeathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stoic_DeathTests.swift; sourceTree = "<group>"; };
 		0337A9D51CA2203700975A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0337A9DA1CA2203700975A53 /* Stoic DeathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stoic DeathUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0337A9DA1CA2203700975A53 /* Stoic Death.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stoic Death.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0337A9DE1CA2203700975A53 /* Stoic_DeathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stoic_DeathUITests.swift; sourceTree = "<group>"; };
 		0337A9E01CA2203700975A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0337A9EC1CA2238F00975A53 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				0337A9B91CA2203600975A53 /* Stoic Death.app */,
-				0337A9CF1CA2203700975A53 /* Stoic DeathTests.xctest */,
-				0337A9DA1CA2203700975A53 /* Stoic DeathUITests.xctest */,
+				0337A9CF1CA2203700975A53 /* Stoic Death.xctest */,
+				0337A9DA1CA2203700975A53 /* Stoic Death.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 			);
 			name = "Stoic DeathTests";
 			productName = "Stoic DeathTests";
-			productReference = 0337A9CF1CA2203700975A53 /* Stoic DeathTests.xctest */;
+			productReference = 0337A9CF1CA2203700975A53 /* Stoic Death.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		0337A9D91CA2203700975A53 /* Stoic DeathUITests */ = {
@@ -212,7 +212,7 @@
 			);
 			name = "Stoic DeathUITests";
 			productName = "Stoic DeathUITests";
-			productReference = 0337A9DA1CA2203700975A53 /* Stoic DeathUITests.xctest */;
+			productReference = 0337A9DA1CA2203700975A53 /* Stoic Death.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -445,7 +445,7 @@
 				INFOPLIST_FILE = "Stoic Death/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AdventureDesign.StoicDeath;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Stoic Death";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -459,7 +459,7 @@
 				INFOPLIST_FILE = "Stoic Death/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AdventureDesign.StoicDeath;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Stoic Death";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -471,7 +471,7 @@
 				INFOPLIST_FILE = "Stoic DeathTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adventure-Design.Stoic-DeathTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Stoic Death";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stoic Death.app/Stoic Death";
 			};
 			name = Debug;
@@ -483,7 +483,7 @@
 				INFOPLIST_FILE = "Stoic DeathTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adventure-Design.Stoic-DeathTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Stoic Death";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stoic Death.app/Stoic Death";
 			};
 			name = Release;
@@ -494,7 +494,7 @@
 				INFOPLIST_FILE = "Stoic DeathUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adventure-Design.Stoic-DeathUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Stoic Death";
 				TEST_TARGET_NAME = "Stoic Death";
 				USES_XCTRUNNER = YES;
 			};
@@ -506,7 +506,7 @@
 				INFOPLIST_FILE = "Stoic DeathUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adventure-Design.Stoic-DeathUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Stoic Death";
 				TEST_TARGET_NAME = "Stoic Death";
 				USES_XCTRUNNER = YES;
 			};
