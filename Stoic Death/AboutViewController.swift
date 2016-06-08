@@ -16,6 +16,9 @@ class AboutViewController: UIViewController {
         // Do any additional setup after loading the view.
        // textView.text = "Awesome Awesome Awesome!"
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "tile")!)
+        self.automaticallyAdjustsScrollViewInsets = false
+        textView.scrollRangeToVisible(NSMakeRange(0, 0))
+
 
     }
 
