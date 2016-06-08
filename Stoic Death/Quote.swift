@@ -14,7 +14,13 @@ class Quote: NSObject {
         var returnString = ""
         let bundle = NSBundle.mainBundle()
         let quotesplistURL = bundle.URLForResource("quotes", withExtension: "plist")
+        do {
+            try quotesplistURL?.setResourceValue(true, forKey: NSURLIsExcludedFromBackupKey)
+        } catch _{
+            print("Failed to exclude from icloud backup")
+        }
         let quotesArray = NSArray(contentsOfURL: quotesplistURL!) //first element of the array is Quote:Quote,Author:Author
+        
         print(quotesArray![dayNumber()])
         if let quoteString : String = quotesArray?[dayNumber()]["Quote"] as? String{
             if let authorString : String = quotesArray?[dayNumber()]["Author"] as? String{

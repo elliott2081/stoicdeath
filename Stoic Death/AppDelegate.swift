@@ -12,14 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let tint = UIColor(red: 66/255, green: 44/255, blue: 15/255, alpha: 1)
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //configure to allow notifications
         let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         
+        //set UI tint
+        self.window?.tintColor = self.tint;
+        self.window?.backgroundColor = UIColor(patternImage: UIImage(named: "tile")!)
+        
+
+        
         return true
+
+    }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        print(notification)
+        let tab = self.window?.rootViewController as! UITabBarController;
+        tab.selectedIndex = 0
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -43,6 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
 
 
 }

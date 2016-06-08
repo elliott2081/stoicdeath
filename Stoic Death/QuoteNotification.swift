@@ -11,7 +11,7 @@ import UIKit
 class QuoteNotification: NSObject { //extend notification?
     
     //MARK: Properties
-    let notification = UILocalNotification()
+    var notification = UILocalNotification()
     var dateString : String{
         get{
             let formatter = NSDateFormatter()
@@ -26,8 +26,12 @@ class QuoteNotification: NSObject { //extend notification?
         self.notification.fireDate = date
         self.notification.alertBody = "A new Stoic Death meditation awaits."
         //self.notification.alertAction = "be awesome!"
+        self.notification.repeatInterval = NSCalendarUnit.Day
         self.notification.soundName = UILocalNotificationDefaultSoundName
-        self.notification.userInfo = ["CustomField1": "w00t"]
+    }
+    init(notification: UILocalNotification){
+        super.init()
+        self.notification = notification
     }
     func schedule(){
         UIApplication.sharedApplication().scheduleLocalNotification(self.notification)
@@ -37,18 +41,5 @@ class QuoteNotification: NSObject { //extend notification?
         UIApplication.sharedApplication().cancelLocalNotification(self.notification)
         print(UIApplication.sharedApplication().scheduledLocalNotifications)
     }
-    
-    deinit{
-        //deinit is called when an object is destroyed
-        //this is useful if an element is removed from an array of notifications
-        //the notification will be automatically descheduled from the OS
-       deschedule()
-        
-        //Note! if not using this class in an array, deinit will be called
-        //right after calling .schedule. Therefore, no notification will be 
-        //triggered because it was cancelled right after creation
-        
-    }
-    
 
 }

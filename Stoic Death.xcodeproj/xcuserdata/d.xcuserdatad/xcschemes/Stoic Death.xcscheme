@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0337A9CE1CA2203700975A53"
-               BuildableName = "Stoic DeathTests.xctest"
+               BuildableName = "Stoic Death.xctest"
                BlueprintName = "Stoic DeathTests"
                ReferencedContainer = "container:Stoic Death.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0337A9D91CA2203700975A53"
-               BuildableName = "Stoic DeathUITests.xctest"
+               BuildableName = "Stoic Death.xctest"
                BlueprintName = "Stoic DeathUITests"
                ReferencedContainer = "container:Stoic Death.xcodeproj">
             </BuildableReference>
