@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -309,7 +309,6 @@ https://aeon.co/videos/how-the-stoic-embrace-of-death-can-help-us-get-a-grip-on-
         <!--About-->
         <scene sceneID="JSu-zC-4mO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x9G-RC-lD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rW2-6a-jl3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="About" image="StoicLaurelIcon" id="RT8-Oh-BdP"/>
                     <toolbarItems/>
@@ -322,6 +321,7 @@ https://aeon.co/videos/how-the-stoic-embrace-of-death-can-help-us-get-a-grip-on-
                         <segue destination="CNB-4K-a7J" kind="relationship" relationship="rootViewController" id="NQm-cY-HDq"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x9G-RC-lD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1535" y="831"/>
         </scene>
