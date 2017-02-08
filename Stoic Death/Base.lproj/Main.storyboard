@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Stoic Death Quote of the Day-->
@@ -15,7 +19,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="JFK-tF-XIk">
@@ -24,14 +28,14 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" priority="997" constant="300" id="joz-00-O9h"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mSe-Ga-uEx">
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mSe-Ga-uEx">
                                 <rect key="frame" x="20" y="72" width="560" height="451"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="mSe-Ga-uEx" secondAttribute="leading" id="4bh-ZM-45D"/>
                             <constraint firstAttribute="leadingMargin" secondItem="JFK-tF-XIk" secondAttribute="leading" id="6Bb-b7-IAs"/>
@@ -67,42 +71,15 @@
                         <viewControllerLayoutGuide type="bottom" id="W3V-np-LxK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="r05-y9-Hc2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXr-3G-nOI">
-                                <rect key="frame" x="20" y="72" width="560" height="471"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wXr-3G-nOI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">About
-
-Why have an app that reminds me of my own mortality? 
-
-The purpose of this app is to neither think about death as something depressing, nor to celebrate death or think about it as something “good”. It is an app designed to send a daily reminder that your most important resource in life is your time. By reflecting on the limited nature of our life every morning the ancient Greek and Roman philosophical school of stoicism taught that the truly important things in life would be brought into focus and our attention brought into the present moment. 
-
-This app is 70% or so, direct quotes from greek and roman stoic philosophers. The rest are modern people who were influenced by Stoicism, or other philosophers, (such as Socrates) that influenced Stoicism. 
-
-For a great essay on the Stoic practice of contemplating death of to 
-
-https://philosophy-of-cbt.com/2014/10/10/the-contemplation-of-death-sample-chapter-from-teach-yourself-stoicism-2014/
-
-and for more information / perspectives check out the following links:
-
-http://everything2.com/title/Stoicism+on+Death+and+Dying
-
-https://howtobeastoic.wordpress.com/2015/04/15/stoicism-and-death/
-
-http://99u.com/articles/24401/a-makers-guidebook-9-stoic-principles-to-nurture-your-life-and-work
-
-http://www.theatlantic.com/health/archive/2015/05/what-good-is-thinking-about-death/394151/
-
-https://blogs.exeter.ac.uk/stoicismtoday/2014/11/29/overcoming-the-fear-of-death-with-stoicism/  
-
-https://aeon.co/videos/how-the-stoic-embrace-of-death-can-help-us-get-a-grip-on-life
-
-</string>
+                                    <fragment content="text">
                                         <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -111,19 +88,13 @@ https://aeon.co/videos/how-the-stoic-embrace-of-death-can-help-us-get-a-grip-on-
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wXr-3G-nOI" firstAttribute="top" secondItem="svc-C5-MN4" secondAttribute="bottom" constant="8" symbolic="YES" id="D6B-tb-cqG"/>
-                            <constraint firstItem="W3V-np-LxK" firstAttribute="top" secondItem="wXr-3G-nOI" secondAttribute="bottom" constant="8" symbolic="YES" id="MGM-kL-3Se"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wXr-3G-nOI" secondAttribute="trailing" id="dxz-Vf-FJD"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="wXr-3G-nOI" secondAttribute="leading" id="pkE-Bq-A3m"/>
-                            <constraint firstItem="wXr-3G-nOI" firstAttribute="top" secondItem="svc-C5-MN4" secondAttribute="bottom" constant="-44" id="xbz-Z9-yki"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wXr-3G-nOI" secondAttribute="trailing" constant="-16" id="BnB-1G-zfk"/>
+                            <constraint firstItem="W3V-np-LxK" firstAttribute="top" secondItem="wXr-3G-nOI" secondAttribute="bottom" id="aow-AR-uqu"/>
+                            <constraint firstItem="wXr-3G-nOI" firstAttribute="top" secondItem="svc-C5-MN4" secondAttribute="bottom" id="mEM-3m-7wv"/>
+                            <constraint firstItem="wXr-3G-nOI" firstAttribute="leading" secondItem="r05-y9-Hc2" secondAttribute="leadingMargin" constant="-16" id="stT-sr-SQD"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="xbz-Z9-yki"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="About the Stoic Death App" id="vCP-wc-yBW"/>
                     <connections>
@@ -132,29 +103,29 @@ https://aeon.co/videos/how-the-stoic-embrace-of-death-can-help-us-get-a-grip-on-
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHR-KG-gaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2302" y="831"/>
+            <point key="canvasLocation" x="2341.5999999999999" y="992.65367316341838"/>
         </scene>
         <!--Set Daily Reminder-->
         <scene sceneID="aey-3g-G2x">
             <objects>
                 <tableViewController id="DhF-G0-nqp" customClass="ReminderTableViewController" customModule="Stoic_Death" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" sectionHeaderHeight="28" sectionFooterHeight="28" id="ySh-0d-3k0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" textLabel="ubm-yP-5xT" rowHeight="115" style="IBUITableViewCellStyleDefault" id="gjk-Bj-Hga">
-                                <rect key="frame" x="0.0" y="92" width="600" height="115"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="115"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gjk-Bj-Hga" id="sYd-Zd-1GN">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="114"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="12:23 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ubm-yP-5xT">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="114"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="114"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -187,11 +158,11 @@ https://aeon.co/videos/how-the-stoic-embrace-of-death-can-help-us-get-a-grip-on-
                         <viewControllerLayoutGuide type="bottom" id="Wbq-EC-EYd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZLc-ZZ-2EW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wkL-PE-Nk2">
-                                <rect key="frame" x="20" y="64" width="560" height="267"/>
+                                <rect key="frame" x="16" y="64" width="343" height="334"/>
                                 <date key="date" timeIntervalSinceReferenceDate="481170849.546933">
                                     <!--2016-04-01 02:34:09 +0000-->
                                 </date>
@@ -200,7 +171,7 @@ https://aeon.co/videos/how-the-stoic-embrace-of-death-can-help-us-get-a-grip-on-
                                 </connections>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wkL-PE-Nk2" firstAttribute="top" secondItem="JRh-Sn-eEk" secondAttribute="bottom" id="2WC-Eg-SwY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wkL-PE-Nk2" secondAttribute="trailing" id="CwR-c4-Bru"/>
@@ -238,7 +209,7 @@ https://aeon.co/videos/how-the-stoic-embrace-of-death-can-help-us-get-a-grip-on-
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Sz3-8W-BvT" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -268,6 +239,34 @@ https://aeon.co/videos/how-the-stoic-embrace-of-death-can-help-us-get-a-grip-on-
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHh-h9-yrg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="728" y="-32"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="rMF-7q-lom">
+            <objects>
+                <tableViewController id="MR2-FZ-r7z" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mLX-rR-A71">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Mdb-Y2-x85">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mdb-Y2-x85" id="9t1-Xv-6Y3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MR2-FZ-r7z" id="LF4-SO-kE6"/>
+                            <outlet property="delegate" destination="MR2-FZ-r7z" id="kV4-Fb-Gde"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NIW-31-zyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534" y="1517"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DNc-lj-HXr">

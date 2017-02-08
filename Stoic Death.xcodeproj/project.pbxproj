@@ -20,6 +20,7 @@
 		03A03DD71CAE19E000C1582C /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A03DD61CAE19E000C1582C /* SetTimeViewController.swift */; };
 		03A03DD91CAE346800C1582C /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A03DD81CAE346800C1582C /* Quote.swift */; };
 		03FED13C1CB4C226005C6B5D /* QuoteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FED13B1CB4C226005C6B5D /* QuoteNotification.swift */; };
+		5C9E30F01E4B0664005EA7E0 /* about.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5C9E30EF1E4B0664005EA7E0 /* about.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		03A03DD61CAE19E000C1582C /* SetTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
 		03A03DD81CAE346800C1582C /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		03FED13B1CB4C226005C6B5D /* QuoteNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteNotification.swift; sourceTree = "<group>"; };
+		5C9E30EF1E4B0664005EA7E0 /* about.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = about.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				0337A9C51CA2203700975A53 /* Assets.xcassets */,
 				0337A9C71CA2203700975A53 /* LaunchScreen.storyboard */,
 				0337A9CA1CA2203700975A53 /* Info.plist */,
+				5C9E30EF1E4B0664005EA7E0 /* about.txt */,
 			);
 			path = "Stoic Death";
 			sourceTree = "<group>";
@@ -228,15 +231,18 @@
 					0337A9B81CA2203600975A53 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 4UWA5DVCG3;
+						LastSwiftMigration = 0800;
 					};
 					0337A9CE1CA2203700975A53 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 2G3AXSCQ2V;
+						LastSwiftMigration = 0800;
 						TestTargetID = 0337A9B81CA2203600975A53;
 					};
 					0337A9D91CA2203700975A53 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 2G3AXSCQ2V;
+						LastSwiftMigration = 0800;
 						TestTargetID = 0337A9B81CA2203600975A53;
 					};
 				};
@@ -268,6 +274,7 @@
 			files = (
 				0337A9C91CA2203700975A53 /* LaunchScreen.storyboard in Resources */,
 				0337A9C61CA2203700975A53 /* Assets.xcassets in Resources */,
+				5C9E30F01E4B0664005EA7E0 /* about.txt in Resources */,
 				0337A9C41CA2203600975A53 /* Main.storyboard in Resources */,
 				032C28091CA23E790062337C /* quotes.plist in Resources */,
 			);
@@ -447,6 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AdventureDesign.StoicDeath;
 				PRODUCT_NAME = "Stoic Death";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -461,6 +469,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AdventureDesign.StoicDeath;
 				PRODUCT_NAME = "Stoic Death";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -472,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adventure-Design.Stoic-DeathTests";
 				PRODUCT_NAME = "Stoic Death";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stoic Death.app/Stoic Death";
 			};
 			name = Debug;
@@ -484,6 +494,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adventure-Design.Stoic-DeathTests";
 				PRODUCT_NAME = "Stoic Death";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stoic Death.app/Stoic Death";
 			};
 			name = Release;
@@ -495,6 +506,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adventure-Design.Stoic-DeathUITests";
 				PRODUCT_NAME = "Stoic Death";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "Stoic Death";
 				USES_XCTRUNNER = YES;
 			};
@@ -507,6 +519,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adventure-Design.Stoic-DeathUITests";
 				PRODUCT_NAME = "Stoic Death";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "Stoic Death";
 				USES_XCTRUNNER = YES;
 			};

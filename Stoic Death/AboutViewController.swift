@@ -16,15 +16,29 @@ class AboutViewController: UIViewController {
         // Do any additional setup after loading the view.
        // textView.text = "Awesome Awesome Awesome!"
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "tile")!)
-        self.automaticallyAdjustsScrollViewInsets = false
-        textView.scrollRangeToVisible(NSMakeRange(0, 0))
-
+        //self.automaticallyAdjustsScrollViewInsets = false
+        
+        let path = NSBundle.mainBundle().pathForResource("about", ofType: "txt")
+        
+        let contents: NSString
+        do {
+            contents = try NSString(contentsOfFile: path!, encoding: NSUTF8StringEncoding)
+        } catch _ {
+            contents = ""
+        }
+        self.textView.text  = contents as String
 
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.textView.setContentOffset(CGPoint.zero, animated: false)
+
     }
     
 
